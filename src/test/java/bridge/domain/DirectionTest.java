@@ -14,9 +14,22 @@ class DirectionTest {
     void testResolveUcode() {
         assertThat(Direction.from("U")).isEqualTo(Direction.UP);
     }
+
     @DisplayName("D 코드는 아래로 인식한다")
     @Test
     void testResolveDcode() {
         assertThat(Direction.from("D")).isEqualTo(Direction.DOWN);
+    }
+
+    @DisplayName("0 코드는 아래로 인식한다")
+    @Test
+    void testResolveNumberCode0() {
+        assertThat(Direction.from(0)).isEqualTo(Direction.DOWN);
+    }
+
+    @DisplayName("1 코드는 위로 인식한다")
+    @Test
+    void testResolveNumberCode1() {
+        assertThat(Direction.from(1)).isEqualTo(Direction.UP);
     }
 }
