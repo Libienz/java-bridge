@@ -48,7 +48,7 @@ public class OutputMessageResolver {
         if (!gameResultDto.isGameSuccess()) {
             stbd.append("게임 성공 여부: 실패\n");
         }
-        stbd.append(String.format("총 시도한 횟수: ", gameResultDto.getRetryCount()));
+        stbd.append(String.format("총 시도한 횟수: %d", gameResultDto.getRetryCount()));
         return stbd.toString();
     }
     private String mapToMoveMark(boolean moveSuccess) {
