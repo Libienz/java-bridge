@@ -1,6 +1,8 @@
-package bridge;
+package bridge.view;
 
 import bridge.domain.Direction;
+import bridge.dto.RoundResultDto;
+import bridge.dto.RoundResultsDto;
 
 import java.util.List;
 

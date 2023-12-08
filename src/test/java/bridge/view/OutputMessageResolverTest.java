@@ -1,7 +1,9 @@
-package bridge;
+package bridge.view;
 
 import bridge.domain.Direction;
-import org.assertj.core.api.Assertions;
+import bridge.dto.RoundResultDto;
+import bridge.dto.RoundResultsDto;
+import bridge.view.OutputMessageResolver;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -9,7 +11,6 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.*;
 
 @DisplayName("메시지 리졸버 테스트")
 class OutputMessageResolverTest {
